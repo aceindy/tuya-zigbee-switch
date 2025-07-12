@@ -74,8 +74,7 @@ void relay_pulse_pin(gpio_pin_e pin, u8 active_level)
 
   // Allocate pulse context
   relay_pulse_t *pulse = ev_buf_malloc(sizeof(relay_pulse_t));
-  if (!pulse)
-    return;
+  if (!pulse) return;
 
   pulse->pin = pin;
   pulse->level_to_clear = !active_level;
