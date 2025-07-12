@@ -16,6 +16,24 @@ typedef struct
   void *              callback_param;
 } relay_t;
 
+typedef struct {
+  gpio_pin_e pin;
+  u8 level_to_clear;
+} relay_pulse_t;
+
+/**
+ * @brief      Pulse-clearing callback
+ * @param      *arg - Pulse details
+ * @return.     none
+ */
+void relay_clear_pulse(void *arg);
+
+/**
+ * @brief.      200ms pulse helper function
+ * @param.      *pin, active level
+ * @return.     none
+*/
+void relay_pulse_pin(gpio_pin_e pin, u8 active_level)
 
 /**
  * @brief      Initialize relay (set initial state)
