@@ -33,7 +33,7 @@ void relay_clear_pulse(void *arg);
  * @param.      *pin, active level
  * @return.     none
 */
-void relay_pulse_pin(gpio_pin_e pin, u8 active_level)
+void relay_pulse_pin(gpio_pin_e pin, u8 active_level);
 
 /**
  * @brief      Initialize relay (set initial state)
