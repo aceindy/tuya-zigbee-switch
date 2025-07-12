@@ -17,7 +17,7 @@ typedef struct
 } relay_t;
 
 typedef struct {
-  u32 pin;
+  gpio_pin_e pin;
   u8 level_to_clear;
 } relay_pulse_t;
 
