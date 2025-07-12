@@ -60,3 +60,26 @@ void relay_toggle(relay_t *relay)
     relay_on(relay);
   }
 }
+
+void relay_clear_pulse(void *arg)
+{
+  relay_pulse_t *pulse = (relay_pulse_t *)arg;
+  drv_gpio_write(pulse->pin, pulse->level_to_clear);
+  ev_buf_free(pulse);
+}
+
+void relay_pulse_pin(gpio_pin_e pin, u8 active_level)
+{
+  drv_gpio_write(pin, active_level);
+
+  // Allocate pulse context
+  relay_pulse_t *pulse = ev_buf_malloc(sizeof(relay_pulse_t));
+  if (!pulse)
+    return;
+
+  pulse->pin = pin;
+  pulse->level_to_clear = !active_level;
+
+  // Schedule the pulse clear after 200ms
+  TL_ZB_TIMER_SCHEDULE(relay_clear_pulse, pulse, 200);
+}
