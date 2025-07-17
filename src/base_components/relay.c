@@ -2,7 +2,7 @@
 #include "tl_common.h"
 #include "millis.h"
 
-#define MAX_RELAY_PULSES 2  // Number of pulses allowed at the same time
+#define MAX_RELAY_PULSES 4  // Number of pulses allowed at the same time
 
 typedef struct {
   u32 pin; 
