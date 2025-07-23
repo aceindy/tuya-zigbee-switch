@@ -11,6 +11,8 @@ typedef struct {
 
 static relay_pulse_t pulse_pool[MAX_RELAY_PULSES];
 static u8 pulse_pool_in_use[MAX_RELAY_PULSES];
+static relay_pulse_t* pulse_alloc(void);
+static void pulse_free(relay_pulse_t* p);
 static void deactivate_pin(u32 pin, u8 turn_off);
 static void schedule_clear_pin(void *arg);
 
