@@ -233,7 +233,7 @@ BSEED_2_GANG_SWITCH_2_END_DEVICE:
   config_str: Bseed-2-gang-2;Bseed-2-gang-2-ED;SB5u;SD4u;RC0B6;RA1D7;ID2;ID3;LC3;M;
   device_type: end_device
   tuya_manufacturer_id: 4417
-  tuya_image_type: 54179
+  tuya_image_type: 43534
   firmware_image_type: 43544
   stock_converter_model: TS0012
   tuya_manufacturer_names:
