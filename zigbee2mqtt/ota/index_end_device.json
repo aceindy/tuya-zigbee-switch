@@ -4,7 +4,7 @@
     "fileVersion": 16986129,
     "fileSize": 130834,
     "url": "https://github.com/aceindy/tuya-zigbee-switch/raw/c04f965e96077e7fcd9f5797f319e352eece033d/bin/BSEED_2_GANG_SWITCH_2_END_DEVICE/1141-aa0e-01033011-tlc_switch.zigbee",
-    "imageType": 43534,
+    "imageType": 43544,
     "manufacturerCode": 4417,
     "sha512": "364906306ae4a0283436833e7ed6e24aa49a08986ca61edaf7b90564bb1e3d5a18c5d3e4393bc98716d44fc0229e5b0974ac0e6155c569c6c595eaca68b0b0df",
     "otaHeaderString": "Telink Zigbee OTA\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
